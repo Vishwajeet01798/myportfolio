@@ -1,6 +1,7 @@
 import React from 'react';
 import '../components/FooterStyles.css';
 import { FaFacebook,FaGithub, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaYoutube } from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -23,13 +24,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className='right'>
-                <h4>About the company</h4>
-                <p>This is me Vishwajeet Verma. CEO & Founder of VV Tech Solutions. I enjoy discussing new projects and design challanges.</p>
+                <h4>About me...</h4>
+                <p>This is me Vishwajeet Verma. I am a Web <span style={{color:" rgb(44, 211, 240)"}}>Developer</span>, I enjoy discussing new projects and design challanges.</p>
                 <div className='social'>
-                <h4><FaFacebook size={30}  style={{color:"#fff",marginRight:"1rem"}}></FaFacebook></h4>
-                <h4><FaLinkedin size={30}  style={{color:"#fff",marginRight:"1rem"}}></FaLinkedin></h4>
-                <h4><FaYoutube size={30}   style={{color:"#fff",marginRight:"1rem"}}></FaYoutube></h4>
-                 <h4><FaGithub size={30}   style={{color:"#fff",marginRight:"1rem"}}></FaGithub></h4>
+              <Link to="https://www.facebook.com/" ><h4><FaFacebook size={30}  style={{color:"#fff",marginRight:"1rem"}}></FaFacebook></h4></Link>
+               <Link to="https://www.linkedin.com/in/vishwajeet-verma-52622b203/"><h4><FaLinkedin size={30}  style={{color:"#fff",marginRight:"1rem"}}></FaLinkedin></h4></Link> 
+                <Link to="https://www.youtube.com/"> <h4><FaYoutube size={30}   style={{color:"#fff",marginRight:"1rem"}}></FaYoutube></h4></Link>
+                <Link to="https://github.com/Vishwajeet01798"><h4><FaGithub size={30}   style={{color:"#fff",marginRight:"1rem"}}></FaGithub></h4></Link> 
                 </div>
             </div>
         </div>
